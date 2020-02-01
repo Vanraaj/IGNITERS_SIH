@@ -1,0 +1,3 @@
+-> Run the django project locally on your system.
+-> View the website and search for the room no. or the lecturer's name which is available.
+-> Map of the floor, room no. will be displayed.

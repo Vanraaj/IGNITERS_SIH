@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HOME</title>
+        <link rel="stylesheet" type="text/css" href="home2.css">
+    </head>
+    
+<body>
+  <div id="header">
+      <img src="data/codeigniter-logo-png-2.png" style="position: absolute;height: 50px;left: 20px;">
+      <div id="name">Igniters Maps</div>
+       <div class="search">
+           <div id="pos1">
+            
+             <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Starting Position</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="#Registrar office">Registrar office</a>
+    <a href="#First floor lift">First floor lift</a>
+    <a href="#First floor washroom for physically challanged 1">First floor washroom for physically challanged</a>
+    <a href="#First Floor washroom 1">First Floor washroom 1</a>
+    <a href="#First Floor washroom 2">First Floor washroom 2</a>
+    <a href="#First Floor girls washroom 1">First Floor girls washroom 1</a>
+    <a href="#First Floor washroom boys 1">washroom boys</a>
+    <a href="#library">library</a>
+    <a href="#Room no. 115">Room no. 115</a>
+      
+  </div>
+</div>
+           </div>
+            <div id="pos2">
+              <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Final Position</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="#Registrar office">Registrar office</a>
+    <a href="#First floor lift">First floor lift</a>
+    <a href="#First floor washroom for physically challanged 1">First floor washroom for physically challanged</a>
+    <a href="#First Floor washroom 1">First Floor washroom 1</a>
+    <a href="#First Floor washroom 2">First Floor washroom 2</a>
+    <a href="#First Floor girls washroom 1">First Floor girls washroom 1</a>
+    <a href="#First Floor washroom boys 1">washroom boys</a>
+    <a href="#library">library</a>
+    <a href="#Room no. 115">Room no. 115</a>
+    <a href="#Room no. 113">Room no. 113</a>
+    <a href="#Room no. 107">Room no. 107</a>
+    <a href="#Room no. 105">Room no. 105</a>
+    <a href="#Room no. 103">Room no. 103</a>
+    <a href="#Room no. 101">Room no. 101</a>
+    <a href="#Room no. 115">Room no. 113</a>
+    <a href="#Dean Academics">Dean Academics</a>
+    <a href="#Computer Lab">Computer Lab</a>
+    <a href="#Second Floor Washroom Gents">Second Floor Washroom Gents</a>
+    <a href="#Second Floor Lift">Second Floor Lift</a>
+    <a href="#EC Lab 2">EC Lab 2</a>
+    <a href="#Second Floor Boys Washroom 1">Second Floor Boys Washroom 1</a>
+    <a href="#Second Floor Physically challanged Washroom 1">Second Floor Physically challanged Washroom 1</a>
+    <a href="#Room No. 215">Room No. 215</a>
+    <a href="#Second Floor girls Washroom 1">Second Floor girls Washroom 1</a>
+    <a href="#Room No. 213">Room No. 213</a>
+    <a href="#Room No. 209">Room No. 209</a>
+    <a href="#Second Floor Boys Washroom 2">Second Floor Boys Washroom 2</a>
+    <a href="#Second Floor Physically challanged Washroom 2">Second Floor Physically challanged Washroom 2</a>
+    <a href="#Second Floor girls Washroom 2">Second Floor girls Washroom 2</a>
+    <a href="#Room No. 205">Room No. 205</a>
+    <a href="#EC Lab 1">EC Lab 1</a>
+    <a href="#Room No. 203">Room No. 203</a>
+    <a href="#Room No. 201">Room No. 201</a>
+    <a href="#Second Floor Boys Washroom 3">Second Floor Boys Washroom 3</a>
+    <a href="#Academic Block Main Gate">Academic Block Main Gate</a>
+      
+  </div>
+</div>
+            </div> 
+ 
+       </div> 
+       
+       
+       <a href="home.html"><img src="data/path.png" style="height: 40px;position: absolute;right: 200px;padding-top: 3px;"></a>
+    </div>
+    
+    <div class="three">
+        
+        <img id="t1" src="new/1a.jpg">
+        
+        <img id="t3" src="new/1c.jpg">
+        
+        <a href="two.html"><img id="t2" src="new/1b.jpg"></a>
+    </div>
+    
+    
+    
+    <div id="footer">Igniters Map</div>
+    
+    <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+</body>
+</html>

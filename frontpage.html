@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="refresh" content="10;home.html">
+</head>
+<style>
+body {
+  background-image: url('new/sun.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+    background-size: cover;
+}
+div {
+  width: 100px;
+  height: 100px;
+
+  position: relative;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration:4 s;
+  animation-iteration-count: 4 ;
+
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0%   {left:0px; top:0px;}
+  25%  { left:200px; top:0px;}
+  50%  { left:200px; top:200px;}
+  75%  { left:0px; top:200px;}
+  100% { left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  0%   { left:300px; top:300px;}
+  25%  { left:900px; top:100px;}
+  50%  { left:900px; top:500px;}
+  100% { left:230px; top:300px;}
+ 
+}
+</style>
+<body>
+<div>
+<img src="new/search.png" alt="search_icon"style="height: 100px">
+    
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HOME</title>
+        <link rel="stylesheet" type="text/css" href="home.css">
+    </head>
+    
+<body>
+    <div id="header">
+      <img src="data/codeigniter-logo-png-2.png" style="position: absolute;height: 50px;left: 20px;">
+      <div id="name">Igniters Maps</div>
+       <div class="search">
+           <div id="pos1">
+            
+             <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Starting Position</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="#Registrar office">Registrar office</a>
+    <a href="#First floor lift">First floor lift</a>
+    <a href="#First floor washroom for physically challanged 1">First floor washroom for physically challanged</a>
+    <a href="#First Floor washroom 1">First Floor washroom 1</a>
+    <a href="#First Floor washroom 2">First Floor washroom 2</a>
+    <a href="#First Floor girls washroom 1">First Floor girls washroom 1</a>
+    <a href="#First Floor washroom boys 1">washroom boys</a>
+    <a href="#library">library</a>
+    <a href="#Room no. 115">Room no. 115</a>
+      
+  </div>
+</div>
+           </div>
+            <div id="pos2">
+              <div class="dropdown">
+  <button onclick="myFunction1()" class="dropbtn">Final Position</button>
+  <div id="myDropdown1" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction1()">
+    <a href="#Registrar office">Registrar office</a>
+    <a href="#First floor lift">First floor lift</a>
+    <a href="#First floor washroom for physically challanged 1">First floor washroom for physically challanged</a>
+    <a href="#First Floor washroom 1">First Floor washroom 1</a>
+    <a href="#First Floor washroom 2">First Floor washroom 2</a>
+    <a href="#First Floor girls washroom 1">First Floor girls washroom 1</a>
+    <a href="#First Floor washroom boys 1">washroom boys</a>
+    <a href="#library">library</a>
+    <a href="#Room no. 115">Room no. 115</a>
+    <a href="#Room no. 113">Room no. 113</a>
+
+   
+      
+  </div>
+</div>
+            </div> 
+ 
+       </div> 
+       
+       <a href="home2.html"><img src="new/meri.png" style="height: 20px;position: absolute;right: 200px;padding-top: 15px;"></a>
+       <a href="first.html" style="float: right;margin-right: 80px;margin-top: 10px; text-decoration: none;color: white;font-size: 30px;">Floor 1</a>
+       
+       <a href="sec.html" style="float: right;margin-right: 80px;margin-top: 10px; text-decoration: none;color: white;font-size: 30px;">Floor 2</a>
+    </div>
+    
+    <img src="new/mapfinal.jpg" style="width: 100%;height: 650px">
+    
+    
+    
+    <div id="footer">Igniters Map</div>
+    
+        <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+  function myFunction1() {
+  document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+  function filterFunction1() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown1");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+#name {
+    position: absolute;
+    left: 80px;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.search{
+    padding-top: 10px;
+/*    background-color: burlywood;*/
+    width: 800px;
+    height: 40px;
+    position: relative;
+    left: 350px;
+    text-align: center;
+    float: left;
+}
+
+#pos1 {
+    background-color:dodgerblue;
+    width: 50%;
+    position: absolute; 
+    height: 30px;
+}
+
+#pos2 {
+    background-color:cornsilk;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    height: 30px;
+}
+
+#header {
+    background-color:aquamarine;
+    height: 50px;
+}
+
+.three {
+/*    background-color: brown;*/
+    position: relative;
+    height: 500px;
+    margin-left: 1%; 
+}
+
+#t1 {
+/*    background-color:deeppink;*/
+    position: absolute;
+    width: 33%;
+    left: 0;
+    width: 33%;
+    height: 620px;
+    top: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#t2 {
+    background-color:chocolate;
+    position: absolute;
+    left: 33%;
+    
+    
+    top: 35px;
+    margin-top: 50px;
+    height: 500px;
+    box-sizing: border-box;
+    
+}
+
+#t3 {
+    background-color: cornflowerblue;
+    position: absolute;
+    left: 66%;
+    width: 33%;
+     top: 35px;
+    margin-top: 50px;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+
+#footer {
+    background-color:crimson;
+    height: 40px;
+    text-align: center;
+    padding-top:12px;
+    font-size: 20px;
+    font-weight: 800;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
